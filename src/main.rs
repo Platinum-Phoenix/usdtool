@@ -97,7 +97,7 @@ fn main() {
 
             println!("The sum is {:?} cents.", cents);
             let dollars: f32 = cents as f32 / 100_f32;
-            println!("Or {:?} dollars", dollars);
+            println!("Or {:?} dollars.", dollars);
         }
         ("", None) => println!("No subcommand was used"), // If no subcommand was used it'll match the tuple ("", None)
         _ => unreachable!(), // If all subcommands are defined above, anything else is unreachable!()
